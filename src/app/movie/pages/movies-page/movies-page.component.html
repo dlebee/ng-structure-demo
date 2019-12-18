@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let movie of movies$ | async">
+        {{ movie.name }} <button [routerLink]="['/movies/', movie.id]">click here for more details</button>
+    </li>    
+</ul>
